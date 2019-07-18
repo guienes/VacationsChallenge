@@ -15,4 +15,8 @@ class PorcoCollectionViewCell: UICollectionViewCell{
     @IBOutlet weak var lblPeso: UILabel!
     @IBOutlet weak var lblIdade: UILabel!
     
+//    override func awakeFromNib() {
+//        self.layer.cornerRadius = 50
+//    }
+    
 }

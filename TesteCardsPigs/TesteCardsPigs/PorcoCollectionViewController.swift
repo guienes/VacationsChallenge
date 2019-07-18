@@ -11,12 +11,17 @@ import UIKit
 import CoreData
 
 class PorcoCollectionViewController: UICollectionViewController{
+
+    @IBOutlet var teste21: UICollectionView!
     
     var porcos: [Porco] = [] // array de database
     let context: NSManagedObjectContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     
     override func viewWillAppear(_ animated: Bool) {
+        
+        teste21.layer.cornerRadius = 20
+        
         do{
             porcos = try context.fetch(Porco.fetchRequest())
         } catch {
@@ -38,9 +43,8 @@ class PorcoCollectionViewController: UICollectionViewController{
         
         if let cell = self.collectionView.dequeueReusableCell(withReuseIdentifier: "porcoCell", for: indexPath) as? PorcoCollectionViewCell{
             cell.lblName.text = porcos[indexPath.row].nome
-            cell.lblPeso.text = "\(porcos[indexPath.row].peso)" //converte para string (\)
-            
-            cell.lblIdade.text = "\(porcos[indexPath.row].idade)"
+            cell.lblPeso.text = "Peso: \(porcos[indexPath.row].peso)" //converte para string (\)
+            cell.lblIdade.text = "Idade: \(porcos[indexPath.row].idade)"
             
             return cell
         }
