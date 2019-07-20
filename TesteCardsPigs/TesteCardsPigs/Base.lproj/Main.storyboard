@@ -637,6 +637,7 @@
                     <connections>
                         <segue destination="5BT-4L-50i" kind="relationship" relationship="viewControllers" id="Pv4-fB-Oca"/>
                         <segue destination="AFo-UR-mAX" kind="relationship" relationship="viewControllers" id="gqo-NH-3w9"/>
+                        <segue destination="48b-Ox-NB9" kind="relationship" relationship="viewControllers" id="YGD-YI-1bZ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZS6-TI-flJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -656,16 +657,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RlX-Ul-nof" userLabel="NomeR" customClass="RoundView" customModule="TesteCardsPigs" customModuleProvider="target">
-                                <rect key="frame" x="20" y="320" width="374" height="51"/>
+                                <rect key="frame" x="20" y="320" width="374" height="52"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RoundedRectangleRegister" translatesAutoresizingMaskIntoConstraints="NO" id="hLQ-Ma-Uek">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="51"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="52"/>
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c0G-zR-w5e">
-                                        <rect key="frame" x="0.0" y="0.0" width="14" height="51"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="51" id="qmE-aI-n3b"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="52"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="43"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -674,11 +672,13 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="hLQ-Ma-Uek" firstAttribute="centerX" secondItem="RlX-Ul-nof" secondAttribute="centerX" id="2X2-Ci-mRe"/>
-                                    <constraint firstItem="c0G-zR-w5e" firstAttribute="leading" secondItem="RlX-Ul-nof" secondAttribute="leading" id="5NG-AP-h8E"/>
-                                    <constraint firstItem="c0G-zR-w5e" firstAttribute="top" secondItem="RlX-Ul-nof" secondAttribute="top" id="IpR-MX-goX"/>
+                                    <constraint firstItem="c0G-zR-w5e" firstAttribute="centerX" secondItem="RlX-Ul-nof" secondAttribute="centerX" id="7e8-eF-Kn8"/>
+                                    <constraint firstItem="c0G-zR-w5e" firstAttribute="width" secondItem="RlX-Ul-nof" secondAttribute="width" id="Fir-72-ogp"/>
+                                    <constraint firstItem="c0G-zR-w5e" firstAttribute="centerY" secondItem="RlX-Ul-nof" secondAttribute="centerY" id="GgQ-HM-fN3"/>
                                     <constraint firstItem="hLQ-Ma-Uek" firstAttribute="centerY" secondItem="RlX-Ul-nof" secondAttribute="centerY" id="RIy-Ww-4fo"/>
                                     <constraint firstItem="hLQ-Ma-Uek" firstAttribute="height" secondItem="RlX-Ul-nof" secondAttribute="height" id="WDC-bb-9ZS"/>
                                     <constraint firstItem="hLQ-Ma-Uek" firstAttribute="width" secondItem="RlX-Ul-nof" secondAttribute="width" id="oaR-PX-7oF"/>
+                                    <constraint firstItem="c0G-zR-w5e" firstAttribute="height" secondItem="RlX-Ul-nof" secondAttribute="height" id="qhd-zq-4Oq"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -687,14 +687,13 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uqs-JF-otY" userLabel="PesoR" customClass="RoundView" customModule="TesteCardsPigs" customModuleProvider="target">
-                                <rect key="frame" x="20" y="458" width="374" height="51"/>
+                                <rect key="frame" x="20" y="459" width="374" height="51"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RoundedRectangleRegister" translatesAutoresizingMaskIntoConstraints="NO" id="QtO-TD-c3w">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="51"/>
                                     </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SMC-6L-GMz">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SMC-6L-GMz">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="51"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="43"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -702,9 +701,13 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="SMC-6L-GMz" firstAttribute="centerY" secondItem="uqs-JF-otY" secondAttribute="centerY" id="3sV-iB-AFc"/>
                                     <constraint firstItem="QtO-TD-c3w" firstAttribute="width" secondItem="uqs-JF-otY" secondAttribute="width" id="45l-Zx-xfQ"/>
                                     <constraint firstItem="QtO-TD-c3w" firstAttribute="height" secondItem="uqs-JF-otY" secondAttribute="height" id="4R7-GZ-A6V"/>
+                                    <constraint firstItem="SMC-6L-GMz" firstAttribute="centerX" secondItem="uqs-JF-otY" secondAttribute="centerX" id="DjB-un-BcM"/>
+                                    <constraint firstItem="SMC-6L-GMz" firstAttribute="width" secondItem="uqs-JF-otY" secondAttribute="width" id="aha-9V-BKZ"/>
                                     <constraint firstItem="QtO-TD-c3w" firstAttribute="centerX" secondItem="uqs-JF-otY" secondAttribute="centerX" id="any-CH-WS5"/>
+                                    <constraint firstItem="SMC-6L-GMz" firstAttribute="height" secondItem="uqs-JF-otY" secondAttribute="height" id="iRa-XV-O7u"/>
                                     <constraint firstItem="QtO-TD-c3w" firstAttribute="centerY" secondItem="uqs-JF-otY" secondAttribute="centerY" id="kBX-3H-PhC"/>
                                     <constraint firstAttribute="height" constant="51" id="unb-YO-HMc"/>
                                 </constraints>
@@ -715,14 +718,13 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XOG-31-pST" userLabel="IdadeR" customClass="RoundView" customModule="TesteCardsPigs" customModuleProvider="target">
-                                <rect key="frame" x="20" y="592" width="374" height="51"/>
+                                <rect key="frame" x="20" y="593" width="374" height="51"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RoundedRectangleRegister" translatesAutoresizingMaskIntoConstraints="NO" id="qOJ-n2-VkT">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="51"/>
                                     </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4D1-eA-j9z">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4D1-eA-j9z">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="51"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="43"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -730,9 +732,13 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="4D1-eA-j9z" firstAttribute="centerY" secondItem="XOG-31-pST" secondAttribute="centerY" id="3aP-2r-XRC"/>
                                     <constraint firstAttribute="height" constant="51" id="8yk-tY-nAe"/>
+                                    <constraint firstItem="4D1-eA-j9z" firstAttribute="height" secondItem="XOG-31-pST" secondAttribute="height" id="9Tm-Na-d2y"/>
                                     <constraint firstItem="qOJ-n2-VkT" firstAttribute="width" secondItem="XOG-31-pST" secondAttribute="width" id="A7R-v9-3QD"/>
                                     <constraint firstItem="qOJ-n2-VkT" firstAttribute="height" secondItem="XOG-31-pST" secondAttribute="height" id="E8K-AV-Qra"/>
+                                    <constraint firstItem="4D1-eA-j9z" firstAttribute="width" secondItem="XOG-31-pST" secondAttribute="width" id="T9c-4o-uqI"/>
+                                    <constraint firstItem="4D1-eA-j9z" firstAttribute="centerX" secondItem="XOG-31-pST" secondAttribute="centerX" id="fTl-Bm-f1V"/>
                                     <constraint firstItem="qOJ-n2-VkT" firstAttribute="centerX" secondItem="XOG-31-pST" secondAttribute="centerX" id="te8-a6-HCC"/>
                                     <constraint firstItem="qOJ-n2-VkT" firstAttribute="centerY" secondItem="XOG-31-pST" secondAttribute="centerY" id="xOb-Cj-l2k"/>
                                 </constraints>
@@ -749,13 +755,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Idade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BR8-9w-mEy">
-                                <rect key="frame" x="164" y="410" width="80" height="40"/>
+                                <rect key="frame" x="164" y="411" width="80" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ccw-JW-Llp">
-                                <rect key="frame" x="164" y="544" width="70" height="40"/>
+                                <rect key="frame" x="164" y="545" width="70" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -865,6 +871,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OQI-Xu-r0a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="589.85507246376812" y="147.99107142857142"/>
+        </scene>
+        <!--Cercado-->
+        <scene sceneID="BGG-r8-ZoU">
+            <objects>
+                <viewController id="48b-Ox-NB9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gRF-8J-Gbi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Oxq-Ov-qc4"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Cercado" id="CNh-5K-8Bv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xg0-JL-CAE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2501" y="148"/>
         </scene>
         <!--Porco Collection View Controller-->
         <scene sceneID="xl3-Up-phK">
