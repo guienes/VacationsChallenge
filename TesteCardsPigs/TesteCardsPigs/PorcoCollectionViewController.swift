@@ -20,7 +20,7 @@ class PorcoCollectionViewController: UICollectionViewController{
     
     override func viewWillAppear(_ animated: Bool) {
         
-        teste21.layer.cornerRadius = 20
+        teste21.layer.cornerRadius = 40
         
         do{
             porcos = try context.fetch(Porco.fetchRequest())

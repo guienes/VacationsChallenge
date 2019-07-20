@@ -10,6 +10,10 @@ class FoodTwoTableViewController: UIViewController,UITableViewDataSource,UITable
         super.viewDidLoad()
     }
     
+    @IBAction func VoltarFoodTwo(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (teste.count)
     }

@@ -17,6 +17,8 @@
 		BC434DED22CA7E020025CDBB /* PorcoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC434DEC22CA7E020025CDBB /* PorcoCollectionViewCell.swift */; };
 		BC434DEF22CA7F110025CDBB /* PorcoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC434DEE22CA7F110025CDBB /* PorcoCollectionViewController.swift */; };
 		BCBE16D422CD331000A86C7A /* RegisterPig.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBE16D322CD331000A86C7A /* RegisterPig.swift */; };
+		BCC6D6E122E0F2730007120F /* NeverFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC6D6E022E0F2730007120F /* NeverFoodViewController.swift */; };
+		BCC6D6E322E0F5220007120F /* NeverFoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC6D6E222E0F5220007120F /* NeverFoodCell.swift */; };
 		BCF624F722DBA6280065EDF7 /* RoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF624F622DBA6280065EDF7 /* RoundView.swift */; };
 		BCF624F922DBB14C0065EDF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCF624F822DBB14C0065EDF7 /* Assets.xcassets */; };
 		BCF6250D22DD4D130065EDF7 /* FoodTwoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF6250C22DD4D130065EDF7 /* FoodTwoTableViewController.swift */; };
@@ -38,6 +40,8 @@
 		BC434DEC22CA7E020025CDBB /* PorcoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PorcoCollectionViewCell.swift; sourceTree = "<group>"; };
 		BC434DEE22CA7F110025CDBB /* PorcoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PorcoCollectionViewController.swift; sourceTree = "<group>"; };
 		BCBE16D322CD331000A86C7A /* RegisterPig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPig.swift; sourceTree = "<group>"; };
+		BCC6D6E022E0F2730007120F /* NeverFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeverFoodViewController.swift; sourceTree = "<group>"; };
+		BCC6D6E222E0F5220007120F /* NeverFoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeverFoodCell.swift; sourceTree = "<group>"; };
 		BCF624F622DBA6280065EDF7 /* RoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundView.swift; sourceTree = "<group>"; };
 		BCF624F822DBB14C0065EDF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCF624FC22DD39390065EDF7 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
@@ -65,6 +69,7 @@
 				BC434DE922CA7A590025CDBB /* Porco+CoreDataProperties.swift */,
 				BCF624FF22DD396D0065EDF7 /* 2xFood */,
 				BCF6251022DF982A0065EDF7 /* AllDayFood */,
+				BCC6D6DF22E0F2580007120F /* NeverFood */,
 				BCF624FB22DD392D0065EDF7 /* RoundedClasses */,
 				BC434DD222C940C80025CDBB /* TesteCardsPigs */,
 				BC434DD122C940C80025CDBB /* Products */,
@@ -94,6 +99,15 @@
 				BC434DE222C940C90025CDBB /* Info.plist */,
 			);
 			path = TesteCardsPigs;
+			sourceTree = "<group>";
+		};
+		BCC6D6DF22E0F2580007120F /* NeverFood */ = {
+			isa = PBXGroup;
+			children = (
+				BCC6D6E022E0F2730007120F /* NeverFoodViewController.swift */,
+				BCC6D6E222E0F5220007120F /* NeverFoodCell.swift */,
+			);
+			path = NeverFood;
 			sourceTree = "<group>";
 		};
 		BCF624FB22DD392D0065EDF7 /* RoundedClasses */ = {
@@ -195,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCF6251222DF9C080065EDF7 /* AllDayFoodViewController.swift in Sources */,
+				BCC6D6E322E0F5220007120F /* NeverFoodCell.swift in Sources */,
 				BCF6251422DF9C670065EDF7 /* AllDayFoodCell.swift in Sources */,
 				BC434DD622C940C80025CDBB /* ViewController.swift in Sources */,
 				BCF6250D22DD4D130065EDF7 /* FoodTwoTableViewController.swift in Sources */,
@@ -203,6 +218,7 @@
 				BC434DED22CA7E020025CDBB /* PorcoCollectionViewCell.swift in Sources */,
 				BC434DD422C940C80025CDBB /* AppDelegate.swift in Sources */,
 				BC434DEF22CA7F110025CDBB /* PorcoCollectionViewController.swift in Sources */,
+				BCC6D6E122E0F2730007120F /* NeverFoodViewController.swift in Sources */,
 				BC434DEB22CA7A590025CDBB /* Porco+CoreDataProperties.swift in Sources */,
 				BC434DEA22CA7A590025CDBB /* Porco+CoreDataClass.swift in Sources */,
 				BCF6250F22DD4DA20065EDF7 /* FoodTwoCell.swift in Sources */,
