@@ -13,7 +13,7 @@
         <!--Meus Porquinhos-->
         <scene sceneID="kTt-9c-XQI">
             <objects>
-                <viewController id="5BT-4L-50i" sceneMemberID="viewController">
+                <viewController id="5BT-4L-50i" customClass="ViewController" customModule="TesteCardsPigs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9FT-UN-QVe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -434,8 +434,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="413" height="60.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01V-PE-6gN">
-                                                    <rect key="frame" x="48" y="2" width="345" height="50"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01V-PE-6gN">
+                                                    <rect key="frame" x="48" y="2" width="73.5" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -453,10 +454,6 @@
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" red="0.64705882349999999" green="0.48627450979999998" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <constraints>
-                                                <constraint firstItem="01V-PE-6gN" firstAttribute="leading" secondItem="kw3-68-5Ef" secondAttribute="leadingMargin" constant="28" id="ElT-mZ-B7r"/>
-                                                <constraint firstItem="01V-PE-6gN" firstAttribute="trailing" secondItem="kw3-68-5Ef" secondAttribute="trailingMargin" id="QoU-sH-z4I"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.64705882349999999" green="0.48627450979999998" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <connections>
