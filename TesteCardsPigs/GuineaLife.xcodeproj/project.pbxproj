@@ -28,7 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BC434DD022C940C80025CDBB /* TesteCardsPigs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TesteCardsPigs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC434DD022C940C80025CDBB /* GuineaLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuineaLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC434DD322C940C80025CDBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC434DD522C940C80025CDBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BC434DD822C940C80025CDBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -71,7 +71,7 @@
 				BCF6251022DF982A0065EDF7 /* AllDayFood */,
 				BCC6D6DF22E0F2580007120F /* NeverFood */,
 				BCF624FB22DD392D0065EDF7 /* RoundedClasses */,
-				BC434DD222C940C80025CDBB /* TesteCardsPigs */,
+				BC434DD222C940C80025CDBB /* GuineaLife */,
 				BC434DD122C940C80025CDBB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -79,12 +79,12 @@
 		BC434DD122C940C80025CDBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BC434DD022C940C80025CDBB /* TesteCardsPigs.app */,
+				BC434DD022C940C80025CDBB /* GuineaLife.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BC434DD222C940C80025CDBB /* TesteCardsPigs */ = {
+		BC434DD222C940C80025CDBB /* GuineaLife */ = {
 			isa = PBXGroup;
 			children = (
 				BC434DD322C940C80025CDBB /* AppDelegate.swift */,
@@ -98,7 +98,7 @@
 				BC434DDF22C940C90025CDBB /* LaunchScreen.storyboard */,
 				BC434DE222C940C90025CDBB /* Info.plist */,
 			);
-			path = TesteCardsPigs;
+			path = GuineaLife;
 			sourceTree = "<group>";
 		};
 		BCC6D6DF22E0F2580007120F /* NeverFood */ = {
@@ -140,9 +140,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BC434DCF22C940C80025CDBB /* TesteCardsPigs */ = {
+		BC434DCF22C940C80025CDBB /* GuineaLife */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BC434DE522C940C90025CDBB /* Build configuration list for PBXNativeTarget "TesteCardsPigs" */;
+			buildConfigurationList = BC434DE522C940C90025CDBB /* Build configuration list for PBXNativeTarget "GuineaLife" */;
 			buildPhases = (
 				BC434DCC22C940C80025CDBB /* Sources */,
 				BC434DCD22C940C80025CDBB /* Frameworks */,
@@ -152,9 +152,9 @@
 			);
 			dependencies = (
 			);
-			name = TesteCardsPigs;
+			name = GuineaLife;
 			productName = TesteCardsPigs;
-			productReference = BC434DD022C940C80025CDBB /* TesteCardsPigs.app */;
+			productReference = BC434DD022C940C80025CDBB /* GuineaLife.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -172,7 +172,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BC434DCB22C940C80025CDBB /* Build configuration list for PBXProject "TesteCardsPigs" */;
+			buildConfigurationList = BC434DCB22C940C80025CDBB /* Build configuration list for PBXProject "GuineaLife" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -185,7 +185,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BC434DCF22C940C80025CDBB /* TesteCardsPigs */,
+				BC434DCF22C940C80025CDBB /* GuineaLife */,
 			);
 		};
 /* End PBXProject section */
@@ -370,7 +370,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V894BS73ZJ;
-				INFOPLIST_FILE = TesteCardsPigs/Info.plist;
+				INFOPLIST_FILE = GuineaLife/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -388,7 +388,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V894BS73ZJ;
-				INFOPLIST_FILE = TesteCardsPigs/Info.plist;
+				INFOPLIST_FILE = GuineaLife/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -403,7 +403,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BC434DCB22C940C80025CDBB /* Build configuration list for PBXProject "TesteCardsPigs" */ = {
+		BC434DCB22C940C80025CDBB /* Build configuration list for PBXProject "GuineaLife" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BC434DE322C940C90025CDBB /* Debug */,
@@ -412,7 +412,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BC434DE522C940C90025CDBB /* Build configuration list for PBXNativeTarget "TesteCardsPigs" */ = {
+		BC434DE522C940C90025CDBB /* Build configuration list for PBXNativeTarget "GuineaLife" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BC434DE622C940C90025CDBB /* Debug */,

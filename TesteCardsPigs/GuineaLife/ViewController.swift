@@ -24,11 +24,11 @@ class ViewController: UIViewController {
         content.title = "Teste"
         content.body = "Cuí?"
         
-        let date = Date().addingTimeInterval(10)
+        var date = DateComponents() //notificacao de comida
+        date.hour = 2 // 2 horas da manhã
+        date.minute = 46 // 46 minutos
         
-        let dateComponents = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second], from: date)
-        
-        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
+        let trigger = UNCalendarNotificationTrigger(dateMatching: date, repeats: true) //repete todos os dias
         
         let uuiString = UUID().uuidString
         let request = UNNotificationRequest(identifier: uuiString, content: content, trigger: trigger)
@@ -37,6 +37,19 @@ class ViewController: UIViewController {
             // caso queira tratar algum erro
         }
     }
+    
+    // tela Tamanho cercado
+    
+    @IBAction func voltarTamanho(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    // tela forração do cercado
+    
+    @IBAction func voltarForracao(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 
 
 }

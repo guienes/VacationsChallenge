@@ -2,7 +2,7 @@ import UIKit
 
 class FoodTwoTableViewController: UIViewController,UITableViewDataSource,UITableViewDelegate{
     
-    let teste = ["* Morango","* Banana","* Amora","* Manga","* Maçã","Rúcula","Beterraba","Cenoura","Nabo","Agrião","Couve","Espinafre" ]
+    let teste = ["* Morango","* Banana","* Amora","* Manga","* Abacaxi","* Ameixa","* Atemóia","* Caqui","* Carambola", "* Cramberry", "* Cereja", "* Maçã","* Figo","* Goiaba", "* Kiwi", "* Melancia", "* Pera", "* Melão", "Rúcula","Beterraba","Cenoura","Nabo","Agrião","Couve","Espinafre" ]
     
     @IBOutlet weak var TwoTableView: UITableView!
     

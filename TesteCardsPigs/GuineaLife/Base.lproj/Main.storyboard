@@ -13,7 +13,7 @@
         <!--Meus Porquinhos-->
         <scene sceneID="kTt-9c-XQI">
             <objects>
-                <viewController id="5BT-4L-50i" customClass="ViewController" customModule="TesteCardsPigs" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5BT-4L-50i" customClass="ViewController" customModule="GuineaLife" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9FT-UN-QVe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,7 +32,7 @@
                                 <rect key="frame" x="336" y="173" width="48" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="addpig" translatesAutoresizingMaskIntoConstraints="NO" id="yo6-DL-hvf">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="preview add" translatesAutoresizingMaskIntoConstraints="NO" id="yo6-DL-hvf">
                                         <rect key="frame" x="0.0" y="0.0" width="48" height="46"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -88,35 +88,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="0w0-wS-bXX">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="-19.5" width="414" height="896"/>
                             </imageView>
-                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="JOs-RB-7cC" customClass="RoundView" customModule="TesteCardsPigs" customModuleProvider="target">
+                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="JOs-RB-7cC" customClass="RoundView" customModule="GuineaLife" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="94" width="414" height="187"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buttondegrade" translatesAutoresizingMaskIntoConstraints="NO" id="Dh8-ed-6K2">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="187"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guinea-pig" translatesAutoresizingMaskIntoConstraints="NO" id="d1J-7b-AJd">
-                                        <rect key="frame" x="43" y="28" width="124" height="131"/>
+                                        <rect key="frame" x="50" y="28" width="124" height="131"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comida" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Doe-9A-nY2">
-                                        <rect key="frame" x="237" y="74" width="117.5" height="42"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Comida" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Doe-9A-nY2">
+                                        <rect key="frame" x="234" y="72" width="117.5" height="42"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="d1J-7b-AJd" firstAttribute="leading" secondItem="JOs-RB-7cC" secondAttribute="leading" constant="43" id="2zN-H3-57x"/>
-                                    <constraint firstAttribute="bottom" secondItem="d1J-7b-AJd" secondAttribute="bottom" constant="28" id="F8f-b1-Lr9"/>
-                                    <constraint firstItem="Doe-9A-nY2" firstAttribute="leading" secondItem="d1J-7b-AJd" secondAttribute="trailing" constant="70" id="Fw9-3t-jfk"/>
-                                    <constraint firstItem="Doe-9A-nY2" firstAttribute="leading" secondItem="Dh8-ed-6K2" secondAttribute="trailing" constant="-177" id="Ren-c7-kPL"/>
-                                    <constraint firstItem="Dh8-ed-6K2" firstAttribute="centerX" secondItem="JOs-RB-7cC" secondAttribute="centerX" id="bB4-zv-2t1"/>
-                                    <constraint firstItem="Dh8-ed-6K2" firstAttribute="centerY" secondItem="JOs-RB-7cC" secondAttribute="centerY" constant="6.5" id="dx7-NP-pQe"/>
-                                    <constraint firstItem="d1J-7b-AJd" firstAttribute="top" secondItem="JOs-RB-7cC" secondAttribute="top" constant="28" id="mWn-DS-Spx"/>
-                                    <constraint firstAttribute="trailing" secondItem="Dh8-ed-6K2" secondAttribute="trailing" id="q06-hk-26k"/>
-                                    <constraint firstAttribute="bottom" secondItem="Doe-9A-nY2" secondAttribute="bottom" constant="71" id="qyC-uN-g5L"/>
-                                    <constraint firstItem="Dh8-ed-6K2" firstAttribute="top" secondItem="JOs-RB-7cC" secondAttribute="top" id="r2d-z4-4qL"/>
+                                    <constraint firstItem="Dh8-ed-6K2" firstAttribute="centerY" secondItem="JOs-RB-7cC" secondAttribute="centerY" id="KTt-TX-qAG"/>
+                                    <constraint firstItem="Dh8-ed-6K2" firstAttribute="width" secondItem="JOs-RB-7cC" secondAttribute="width" id="MUZ-Bd-jM2"/>
+                                    <constraint firstItem="Dh8-ed-6K2" firstAttribute="height" secondItem="JOs-RB-7cC" secondAttribute="height" id="SJ7-Fb-4di"/>
+                                    <constraint firstItem="d1J-7b-AJd" firstAttribute="leading" secondItem="JOs-RB-7cC" secondAttribute="leading" constant="50" id="UQZ-Um-HQP"/>
+                                    <constraint firstAttribute="height" constant="187" id="XiJ-Ut-Vt6"/>
+                                    <constraint firstAttribute="bottom" secondItem="d1J-7b-AJd" secondAttribute="bottom" constant="28" id="aFW-mC-8p8"/>
+                                    <constraint firstItem="d1J-7b-AJd" firstAttribute="top" secondItem="JOs-RB-7cC" secondAttribute="top" constant="28" id="fi9-Cd-bn6"/>
+                                    <constraint firstItem="Dh8-ed-6K2" firstAttribute="centerX" secondItem="JOs-RB-7cC" secondAttribute="centerX" id="jcB-w3-UsM"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -124,7 +123,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="29l-ch-2Kh" userLabel="Round View 2x" customClass="RoundView" customModule="TesteCardsPigs" customModuleProvider="target">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="29l-ch-2Kh" userLabel="Round View 2x" customClass="RoundView" customModule="GuineaLife" customModuleProvider="target">
                                 <rect key="frame" x="20" y="429" width="157" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -139,7 +138,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1V-N0-q0D" customClass="RoundButton" customModule="TesteCardsPigs" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1V-N0-q0D" customClass="RoundButton" customModule="GuineaLife" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="1" width="157" height="82"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <userDefinedRuntimeAttributes>
@@ -158,7 +157,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bDZ-sw-vNB" userLabel="Round View allDay" customClass="RoundView" customModule="TesteCardsPigs" customModuleProvider="target">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bDZ-sw-vNB" userLabel="Round View allDay" customClass="RoundView" customModule="GuineaLife" customModuleProvider="target">
                                 <rect key="frame" x="237" y="429" width="157" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -173,7 +172,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cV8-5T-rau" customClass="RoundButton" customModule="TesteCardsPigs" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cV8-5T-rau" customClass="RoundButton" customModule="GuineaLife" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="1" width="157" height="82"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <userDefinedRuntimeAttributes>
@@ -192,7 +191,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2BP-z1-utZ" userLabel="Round View allDay" customClass="RoundView" customModule="TesteCardsPigs" customModuleProvider="target">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2BP-z1-utZ" userLabel="Round View allDay" customClass="RoundView" customModule="GuineaLife" customModuleProvider="target">
                                 <rect key="frame" x="129" y="591" width="157" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -207,7 +206,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gF-ZQ-hqv" customClass="RoundButton" customModule="TesteCardsPigs" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gF-ZQ-hqv" customClass="RoundButton" customModule="GuineaLife" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="1" width="157" height="82"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <userDefinedRuntimeAttributes>
@@ -229,13 +228,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="JOs-RB-7cC" firstAttribute="height" secondItem="0w0-wS-bXX" secondAttribute="height" multiplier="0.23" constant="-19.080000000000013" id="63P-FZ-ILa"/>
-                            <constraint firstItem="wKA-OJ-XOz" firstAttribute="trailing" secondItem="0w0-wS-bXX" secondAttribute="trailing" id="E3R-SW-rWj"/>
-                            <constraint firstItem="JOs-RB-7cC" firstAttribute="trailing" secondItem="wKA-OJ-XOz" secondAttribute="trailing" id="Eni-tj-NWS"/>
-                            <constraint firstItem="JOs-RB-7cC" firstAttribute="leading" secondItem="wKA-OJ-XOz" secondAttribute="leading" id="MBb-Hp-w3b"/>
-                            <constraint firstItem="0w0-wS-bXX" firstAttribute="leading" secondItem="wKA-OJ-XOz" secondAttribute="leading" id="Tsa-bH-Y93"/>
-                            <constraint firstItem="0w0-wS-bXX" firstAttribute="top" secondItem="Okn-eJ-gPA" secondAttribute="top" id="dMK-xs-Mva"/>
-                            <constraint firstItem="JOs-RB-7cC" firstAttribute="top" secondItem="wKA-OJ-XOz" secondAttribute="top" constant="50" id="xlQ-en-XED"/>
+                            <constraint firstItem="JOs-RB-7cC" firstAttribute="top" secondItem="wKA-OJ-XOz" secondAttribute="top" constant="50" id="06s-zi-guX"/>
+                            <constraint firstItem="0w0-wS-bXX" firstAttribute="height" secondItem="Okn-eJ-gPA" secondAttribute="height" id="3Zr-vx-xgA"/>
+                            <constraint firstItem="0w0-wS-bXX" firstAttribute="centerX" secondItem="wKA-OJ-XOz" secondAttribute="centerX" id="LLh-2p-V4T"/>
+                            <constraint firstItem="JOs-RB-7cC" firstAttribute="leading" secondItem="wKA-OJ-XOz" secondAttribute="leading" id="M3H-iK-ctK"/>
+                            <constraint firstItem="JOs-RB-7cC" firstAttribute="trailing" secondItem="wKA-OJ-XOz" secondAttribute="trailing" id="O6E-BX-Wn1"/>
+                            <constraint firstItem="0w0-wS-bXX" firstAttribute="centerY" secondItem="wKA-OJ-XOz" secondAttribute="centerY" id="mF5-7u-zGM"/>
+                            <constraint firstItem="0w0-wS-bXX" firstAttribute="width" secondItem="Okn-eJ-gPA" secondAttribute="width" id="oN4-oP-LCx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wKA-OJ-XOz"/>
                     </view>
@@ -249,7 +248,7 @@
         <!--All Day Food View Controller-->
         <scene sceneID="12I-5A-3ob">
             <objects>
-                <viewController id="VtH-E6-bsA" customClass="AllDayFoodViewController" customModule="TesteCardsPigs" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="VtH-E6-bsA" customClass="AllDayFoodViewController" customModule="GuineaLife" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="53q-M5-dUx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -257,7 +256,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="bRi-RE-1zr">
                                 <rect key="frame" x="0.0" y="-34" width="414" height="930"/>
                             </imageView>
-                            <view contentMode="scaleAspectFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IEc-Rl-SYy" customClass="RoundView" customModule="TesteCardsPigs" customModuleProvider="target">
+                            <view contentMode="scaleAspectFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IEc-Rl-SYy" customClass="RoundView" customModule="GuineaLife" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="94" width="416" height="199"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -289,7 +288,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" red="0.64705882349999999" green="0.48627450979999998" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AllDayCellID" rowHeight="61" id="w4S-ZF-HL4" customClass="AllDayFoodCell" customModule="TesteCardsPigs" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AllDayCellID" rowHeight="61" id="w4S-ZF-HL4" customClass="AllDayFoodCell" customModule="GuineaLife" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="413" height="61"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="w4S-ZF-HL4" id="y68-48-Ist">
@@ -387,7 +386,7 @@
         <!--Never Food View Controller-->
         <scene sceneID="xI9-wA-oEq">
             <objects>
-                <viewController id="ZrQ-Bt-5BF" customClass="NeverFoodViewController" customModule="TesteCardsPigs" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ZrQ-Bt-5BF" customClass="NeverFoodViewController" customModule="GuineaLife" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vRb-hd-Nrb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -395,7 +394,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="IwA-t1-FnO">
                                 <rect key="frame" x="0.0" y="-34" width="414" height="930"/>
                             </imageView>
-                            <view contentMode="scaleAspectFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sjq-IL-r6s" customClass="RoundView" customModule="TesteCardsPigs" customModuleProvider="target">
+                            <view contentMode="scaleAspectFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sjq-IL-r6s" customClass="RoundView" customModule="GuineaLife" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="94" width="416" height="199"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -427,7 +426,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" red="0.64705882349999999" green="0.48627450979999998" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NeverFoodCellID" rowHeight="61" id="nkP-5I-tMm" customClass="NeverFoodCell" customModule="TesteCardsPigs" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NeverFoodCellID" rowHeight="61" id="nkP-5I-tMm" customClass="NeverFoodCell" customModule="GuineaLife" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="413" height="61"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nkP-5I-tMm" id="kw3-68-5Ef">
@@ -495,7 +494,7 @@
         <!--Food Two Table View Controller-->
         <scene sceneID="UPo-YB-fut">
             <objects>
-                <viewController id="RdT-Nr-jMm" customClass="FoodTwoTableViewController" customModule="TesteCardsPigs" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="RdT-Nr-jMm" customClass="FoodTwoTableViewController" customModule="GuineaLife" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9KI-xQ-Vv0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -503,7 +502,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="X95-yM-z1c">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <view contentMode="scaleAspectFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eca-Ug-KPJ" customClass="RoundView" customModule="TesteCardsPigs" customModuleProvider="target">
+                            <view contentMode="scaleAspectFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eca-Ug-KPJ" customClass="RoundView" customModule="GuineaLife" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="94" width="416" height="199"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -535,7 +534,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" red="0.64705882349999999" green="0.48627450979999998" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FoodTwoID" rowHeight="61" id="6DV-hv-oBz" customClass="FoodTwoCell" customModule="TesteCardsPigs" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FoodTwoID" rowHeight="61" id="6DV-hv-oBz" customClass="FoodTwoCell" customModule="GuineaLife" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="413" height="61"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6DV-hv-oBz" id="pEI-bh-SUB">
@@ -644,7 +643,7 @@
         <!--Adicionar porquinho-->
         <scene sceneID="IRF-qO-m3W">
             <objects>
-                <viewController id="FsE-ee-Il0" customClass="RegisterPig" customModule="TesteCardsPigs" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="FsE-ee-Il0" customClass="RegisterPig" customModule="GuineaLife" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="w8E-1J-qXi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -653,7 +652,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RlX-Ul-nof" userLabel="NomeR" customClass="RoundView" customModule="TesteCardsPigs" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RlX-Ul-nof" userLabel="NomeR" customClass="RoundView" customModule="GuineaLife" customModuleProvider="target">
                                 <rect key="frame" x="20" y="320" width="374" height="52"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RoundedRectangleRegister" translatesAutoresizingMaskIntoConstraints="NO" id="hLQ-Ma-Uek">
@@ -683,7 +682,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uqs-JF-otY" userLabel="PesoR" customClass="RoundView" customModule="TesteCardsPigs" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uqs-JF-otY" userLabel="PesoR" customClass="RoundView" customModule="GuineaLife" customModuleProvider="target">
                                 <rect key="frame" x="20" y="459" width="374" height="51"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RoundedRectangleRegister" translatesAutoresizingMaskIntoConstraints="NO" id="QtO-TD-c3w">
@@ -714,7 +713,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XOG-31-pST" userLabel="IdadeR" customClass="RoundView" customModule="TesteCardsPigs" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XOG-31-pST" userLabel="IdadeR" customClass="RoundView" customModule="GuineaLife" customModuleProvider="target">
                                 <rect key="frame" x="20" y="593" width="374" height="51"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RoundedRectangleRegister" translatesAutoresizingMaskIntoConstraints="NO" id="qOJ-n2-VkT">
@@ -763,7 +762,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rnm-J5-xJ7" customClass="RoundView" customModule="TesteCardsPigs" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rnm-J5-xJ7" customClass="RoundView" customModule="GuineaLife" customModuleProvider="target">
                                 <rect key="frame" x="40" y="70" width="335" height="186"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="registerbackground" translatesAutoresizingMaskIntoConstraints="NO" id="JIB-uu-NIO">
@@ -793,7 +792,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ok4-e0-UlD" customClass="RoundView" customModule="TesteCardsPigs" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ok4-e0-UlD" customClass="RoundView" customModule="GuineaLife" customModuleProvider="target">
                                 <rect key="frame" x="109.5" y="723" width="195" height="67"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RegisterButtonBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Mpa-dG-et4">
@@ -869,6 +868,106 @@
             </objects>
             <point key="canvasLocation" x="589.85507246376812" y="147.99107142857142"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="MPz-PK-tl1">
+            <objects>
+                <viewController id="dH2-Hk-hRu" customClass="ViewController" customModule="GuineaLife" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pms-j2-poi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="y0r-6h-w1p">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="b0M-r1-JxX" customClass="RoundView" customModule="GuineaLife" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="94" width="414" height="187"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buttondegrade" translatesAutoresizingMaskIntoConstraints="NO" id="FL4-nm-sBg">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="187"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="guinea-pig" translatesAutoresizingMaskIntoConstraints="NO" id="p5D-Pm-F0d">
+                                        <rect key="frame" x="56" y="28" width="124" height="131"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tamanho" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bV-Ib-sf8">
+                                        <rect key="frame" x="224" y="72" width="138" height="42"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.78367001570000006" green="0.21766503600000001" blue="0.17679175959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="FL4-nm-sBg" firstAttribute="height" secondItem="b0M-r1-JxX" secondAttribute="height" id="AVY-iI-1th"/>
+                                    <constraint firstAttribute="height" constant="187" id="SLU-Ai-hjp"/>
+                                    <constraint firstItem="FL4-nm-sBg" firstAttribute="centerX" secondItem="b0M-r1-JxX" secondAttribute="centerX" id="WTX-3p-wiW"/>
+                                    <constraint firstItem="FL4-nm-sBg" firstAttribute="width" secondItem="b0M-r1-JxX" secondAttribute="width" id="cvd-NX-H8N"/>
+                                    <constraint firstItem="FL4-nm-sBg" firstAttribute="centerY" secondItem="b0M-r1-JxX" secondAttribute="centerY" id="kz2-PE-gH6"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NJf-pH-hWD" userLabel="1pig">
+                                <rect key="frame" x="57" y="325" width="301" height="132"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1 pig" translatesAutoresizingMaskIntoConstraints="NO" id="5bn-bn-MIr">
+                                        <rect key="frame" x="0.0" y="-4" width="301" height="136"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4hA-On-sp2" userLabel="2 pig">
+                                <rect key="frame" x="57" y="506" width="301" height="132"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2 pig" translatesAutoresizingMaskIntoConstraints="NO" id="xAy-Vy-vF7">
+                                        <rect key="frame" x="0.0" y="-4" width="301" height="136"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QVZ-fu-Ykt" userLabel="3 pig">
+                                <rect key="frame" x="57" y="680" width="301" height="132"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3 pig" translatesAutoresizingMaskIntoConstraints="NO" id="h0I-LP-v4g">
+                                        <rect key="frame" x="0.0" y="0.0" width="301" height="136"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WcT-0X-w3c">
+                                <rect key="frame" x="20" y="44" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Voltar"/>
+                                <connections>
+                                    <action selector="VoltarFoodTwo:" destination="RdT-Nr-jMm" eventType="touchUpInside" id="Rmw-bT-2lw"/>
+                                    <action selector="voltarTamanho:" destination="dH2-Hk-hRu" eventType="touchUpInside" id="VyF-1d-VmF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="y0r-6h-w1p" firstAttribute="height" secondItem="Pms-j2-poi" secondAttribute="height" id="AhC-RE-NRS"/>
+                            <constraint firstItem="b0M-r1-JxX" firstAttribute="top" secondItem="5ON-vb-9UD" secondAttribute="top" constant="50" id="CWi-jc-b3v"/>
+                            <constraint firstItem="b0M-r1-JxX" firstAttribute="trailing" secondItem="5ON-vb-9UD" secondAttribute="trailing" id="DUE-FI-hMf"/>
+                            <constraint firstItem="y0r-6h-w1p" firstAttribute="centerY" secondItem="5ON-vb-9UD" secondAttribute="centerY" constant="-5" id="Kyg-ot-Whx"/>
+                            <constraint firstItem="y0r-6h-w1p" firstAttribute="centerX" secondItem="5ON-vb-9UD" secondAttribute="centerX" id="gV2-rv-9wa"/>
+                            <constraint firstItem="y0r-6h-w1p" firstAttribute="width" secondItem="Pms-j2-poi" secondAttribute="width" id="jgd-NH-cSd"/>
+                            <constraint firstItem="b0M-r1-JxX" firstAttribute="leading" secondItem="5ON-vb-9UD" secondAttribute="leading" id="ttE-po-aUm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5ON-vb-9UD"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DVZ-Mm-GJr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3446.376811594203" y="147.99107142857142"/>
+        </scene>
         <!--Cercado-->
         <scene sceneID="BGG-r8-ZoU">
             <objects>
@@ -876,7 +975,121 @@
                     <view key="view" contentMode="scaleToFill" id="gRF-8J-Gbi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="iSi-SA-yko">
+                                <rect key="frame" x="0.0" y="-19.5" width="414" height="896"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XAz-Jo-RFF" userLabel="Round View 2x" customClass="RoundView" customModule="GuineaLife" customModuleProvider="target">
+                                <rect key="frame" x="29" y="407" width="157" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="buttondegrade" translatesAutoresizingMaskIntoConstraints="NO" id="rXl-Kq-QAN">
+                                        <rect key="frame" x="0.0" y="0.0" width="157" height="83"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tamanho" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CcL-lU-kZa">
+                                        <rect key="frame" x="24" y="0.0" width="108" height="77"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZGQ-xs-quQ" customClass="RoundButton" customModule="GuineaLife" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="1" width="157" height="82"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="dH2-Hk-hRu" kind="show" id="4sG-X5-hsV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qiG-ac-bVv" userLabel="Round View 2x" customClass="RoundView" customModule="GuineaLife" customModuleProvider="target">
+                                <rect key="frame" x="227" y="407" width="157" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="buttondegrade" translatesAutoresizingMaskIntoConstraints="NO" id="d1S-Qc-m7X">
+                                        <rect key="frame" x="0.0" y="0.0" width="157" height="83"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Forração" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJx-Yz-xb7">
+                                        <rect key="frame" x="24" y="0.0" width="108" height="77"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPB-Lu-XrN" customClass="RoundButton" customModule="GuineaLife" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="1" width="157" height="82"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="RcP-DD-1Sb" kind="show" id="e62-hu-WhZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="iC3-TP-9Sd" customClass="RoundView" customModule="GuineaLife" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="94" width="414" height="187"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buttondegrade" translatesAutoresizingMaskIntoConstraints="NO" id="ha2-2U-49D">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="187"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="guinea-pig" translatesAutoresizingMaskIntoConstraints="NO" id="Kr3-h2-Td2">
+                                        <rect key="frame" x="50" y="28" width="124" height="131"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cercado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qYl-21-DG1">
+                                        <rect key="frame" x="234" y="72" width="128" height="42"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.78367001570000006" green="0.21766503600000001" blue="0.17679175959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ha2-2U-49D" firstAttribute="centerY" secondItem="iC3-TP-9Sd" secondAttribute="centerY" id="YKs-Eb-pK3"/>
+                                    <constraint firstAttribute="height" constant="187" id="ct7-cg-oec"/>
+                                    <constraint firstItem="ha2-2U-49D" firstAttribute="width" secondItem="iC3-TP-9Sd" secondAttribute="width" id="fv1-2v-vfu"/>
+                                    <constraint firstItem="ha2-2U-49D" firstAttribute="height" secondItem="iC3-TP-9Sd" secondAttribute="height" id="t2U-9H-dO9"/>
+                                    <constraint firstItem="ha2-2U-49D" firstAttribute="centerX" secondItem="iC3-TP-9Sd" secondAttribute="centerX" id="vcA-eN-2d3"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iSi-SA-yko" firstAttribute="centerX" secondItem="Oxq-Ov-qc4" secondAttribute="centerX" id="1go-JG-afP"/>
+                            <constraint firstItem="iSi-SA-yko" firstAttribute="centerY" secondItem="Oxq-Ov-qc4" secondAttribute="centerY" id="94o-ay-VEL"/>
+                            <constraint firstItem="iC3-TP-9Sd" firstAttribute="top" secondItem="Oxq-Ov-qc4" secondAttribute="top" constant="50" id="9aA-Ox-DSj"/>
+                            <constraint firstItem="iC3-TP-9Sd" firstAttribute="trailing" secondItem="Oxq-Ov-qc4" secondAttribute="trailing" id="OHG-ws-yaS"/>
+                            <constraint firstItem="iC3-TP-9Sd" firstAttribute="leading" secondItem="Oxq-Ov-qc4" secondAttribute="leading" id="dmD-Ya-Tva"/>
+                            <constraint firstItem="iSi-SA-yko" firstAttribute="width" secondItem="gRF-8J-Gbi" secondAttribute="width" id="qOh-76-hem"/>
+                            <constraint firstItem="iSi-SA-yko" firstAttribute="height" secondItem="gRF-8J-Gbi" secondAttribute="height" id="vQd-qS-Tgl"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Oxq-Ov-qc4"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Cercado" id="CNh-5K-8Bv"/>
@@ -885,10 +1098,162 @@
             </objects>
             <point key="canvasLocation" x="-2501" y="148"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="CHN-YO-jyC">
+            <objects>
+                <viewController id="RcP-DD-1Sb" customClass="ViewController" customModule="GuineaLife" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jpT-EM-Wun">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="obq-1g-Z2b">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="swE-Ss-Rkp" customClass="RoundView" customModule="GuineaLife" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="94" width="414" height="187"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buttondegrade" translatesAutoresizingMaskIntoConstraints="NO" id="iiN-fp-fTU">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="187"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="guinea-pig" translatesAutoresizingMaskIntoConstraints="NO" id="WOu-l1-Nx6">
+                                        <rect key="frame" x="56" y="28" width="124" height="131"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Forração" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dof-Om-I6q">
+                                        <rect key="frame" x="247" y="72" width="132" height="42"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.78367001570000006" green="0.21766503600000001" blue="0.17679175959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="iiN-fp-fTU" firstAttribute="width" secondItem="swE-Ss-Rkp" secondAttribute="width" id="AvX-yA-SG6"/>
+                                    <constraint firstItem="iiN-fp-fTU" firstAttribute="centerY" secondItem="swE-Ss-Rkp" secondAttribute="centerY" id="EQx-9e-lBB"/>
+                                    <constraint firstItem="iiN-fp-fTU" firstAttribute="height" secondItem="swE-Ss-Rkp" secondAttribute="height" id="PUx-Jo-vay"/>
+                                    <constraint firstItem="iiN-fp-fTU" firstAttribute="centerX" secondItem="swE-Ss-Rkp" secondAttribute="centerX" id="nrC-cU-KRe"/>
+                                    <constraint firstAttribute="height" constant="187" id="r4R-ti-svZ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L16-Io-gC1" customClass="RoundView" customModule="GuineaLife" customModuleProvider="target">
+                                <rect key="frame" x="66" y="750" width="282" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="squareforracaobackground" translatesAutoresizingMaskIntoConstraints="NO" id="38P-L8-sTA">
+                                        <rect key="frame" x="0.0" y="0.0" width="282" height="95"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="plastico grosso ou polionda" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vuR-tk-RWG">
+                                        <rect key="frame" x="68" y="9" width="146" height="77"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iG3-rp-u5o" customClass="RoundView" customModule="GuineaLife" customModuleProvider="target">
+                                <rect key="frame" x="66" y="627" width="282" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="squareforracaobackground" translatesAutoresizingMaskIntoConstraints="NO" id="ZFO-bu-o9k">
+                                        <rect key="frame" x="0.0" y="0.0" width="282" height="95"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2 camadas de toalhas ou outro material absorvente" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ogx-Ux-lgt">
+                                        <rect key="frame" x="25" y="9" width="233" height="77"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1kR-aL-ZgQ" customClass="RoundView" customModule="GuineaLife" customModuleProvider="target">
+                                <rect key="frame" x="66" y="510" width="282" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="squareforracaobackground" translatesAutoresizingMaskIntoConstraints="NO" id="sIA-GG-fcX">
+                                        <rect key="frame" x="0.0" y="0.0" width="282" height="95"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tecido soft (Fleece) ou elanca" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9lc-tb-Lbl">
+                                        <rect key="frame" x="49" y="9" width="182" height="77"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sSu-bF-cCE" customClass="RoundView" customModule="GuineaLife" customModuleProvider="target">
+                                <rect key="frame" x="20" y="305" width="374" height="174"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="porquinho soft" translatesAutoresizingMaskIntoConstraints="NO" id="tko-0f-sSR">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="177"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bkk-To-O1g">
+                                <rect key="frame" x="20" y="44" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Voltar"/>
+                                <connections>
+                                    <action selector="VoltarFoodTwo:" destination="RdT-Nr-jMm" eventType="touchUpInside" id="aYU-KQ-9g3"/>
+                                    <action selector="voltarForracao:" destination="RcP-DD-1Sb" eventType="touchUpInside" id="yNg-or-WAP"/>
+                                    <action selector="voltarTamanho:" destination="dH2-Hk-hRu" eventType="touchUpInside" id="yUW-xp-cUA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="swE-Ss-Rkp" firstAttribute="leading" secondItem="h4U-1I-rO1" secondAttribute="leading" id="4AS-dR-dGZ"/>
+                            <constraint firstItem="obq-1g-Z2b" firstAttribute="centerY" secondItem="h4U-1I-rO1" secondAttribute="centerY" constant="-5" id="Kms-Gn-AYa"/>
+                            <constraint firstItem="obq-1g-Z2b" firstAttribute="centerX" secondItem="h4U-1I-rO1" secondAttribute="centerX" id="Q25-Q6-1hO"/>
+                            <constraint firstItem="swE-Ss-Rkp" firstAttribute="top" secondItem="h4U-1I-rO1" secondAttribute="top" constant="50" id="QFt-Zh-gF2"/>
+                            <constraint firstItem="obq-1g-Z2b" firstAttribute="height" secondItem="jpT-EM-Wun" secondAttribute="height" id="Wy8-K5-Fr8"/>
+                            <constraint firstItem="obq-1g-Z2b" firstAttribute="width" secondItem="jpT-EM-Wun" secondAttribute="width" id="hhr-1g-VTG"/>
+                            <constraint firstItem="swE-Ss-Rkp" firstAttribute="trailing" secondItem="h4U-1I-rO1" secondAttribute="trailing" id="tk9-GF-KUK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="h4U-1I-rO1"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z5r-R3-Zrf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2501.449275362319" y="862.5"/>
+        </scene>
         <!--Porco Collection View Controller-->
         <scene sceneID="xl3-Up-phK">
             <objects>
-                <collectionViewController id="Eio-SM-fiA" customClass="PorcoCollectionViewController" customModule="TesteCardsPigs" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="Eio-SM-fiA" customClass="PorcoCollectionViewController" customModule="GuineaLife" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="r4V-fr-yV4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -900,7 +1265,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="porcoCell" id="tY4-m1-bse" customClass="PorcoCollectionViewCell" customModule="TesteCardsPigs" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="porcoCell" id="tY4-m1-bse" customClass="PorcoCollectionViewCell" customModule="GuineaLife" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="215" width="294" height="466"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -976,15 +1341,20 @@
         </scene>
     </scenes>
     <resources>
+        <image name="1 pig" width="302" height="131"/>
+        <image name="2 pig" width="329" height="130"/>
+        <image name="3 pig" width="329" height="130"/>
         <image name="Add Pig" width="154" height="129"/>
         <image name="Background" width="375" height="812"/>
         <image name="BackgroundCardRoundedd" width="295" height="466"/>
         <image name="BackgroundCell" width="375" height="44"/>
         <image name="RegisterButtonBackground" width="195" height="67"/>
         <image name="RoundedRectangleRegister" width="335" height="51"/>
-        <image name="addpig" width="48" height="48"/>
         <image name="buttondegrade" width="157" height="83"/>
         <image name="guinea-pig" width="124" height="131"/>
+        <image name="porquinho soft" width="285" height="145"/>
+        <image name="preview add" width="48" height="48"/>
         <image name="registerbackground" width="335" height="186"/>
+        <image name="squareforracaobackground" width="214" height="72"/>
     </resources>
 </document>
