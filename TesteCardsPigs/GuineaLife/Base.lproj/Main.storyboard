@@ -762,36 +762,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rnm-J5-xJ7" customClass="RoundView" customModule="GuineaLife" customModuleProvider="target">
-                                <rect key="frame" x="40" y="70" width="335" height="186"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="registerbackground" translatesAutoresizingMaskIntoConstraints="NO" id="JIB-uu-NIO">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="186"/>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Add Pig" translatesAutoresizingMaskIntoConstraints="NO" id="oLI-Su-IvT">
-                                        <rect key="frame" x="91.5" y="29" width="152" height="128"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="152" id="4aJ-bU-BdZ"/>
-                                            <constraint firstAttribute="height" constant="128" id="E4K-RW-Pag"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="JIB-uu-NIO" firstAttribute="centerX" secondItem="Rnm-J5-xJ7" secondAttribute="centerX" id="7i5-q3-hSD"/>
-                                    <constraint firstItem="JIB-uu-NIO" firstAttribute="centerY" secondItem="Rnm-J5-xJ7" secondAttribute="centerY" id="89D-c9-Ojh"/>
-                                    <constraint firstItem="JIB-uu-NIO" firstAttribute="width" secondItem="Rnm-J5-xJ7" secondAttribute="width" id="8ah-qx-kZ9"/>
-                                    <constraint firstItem="oLI-Su-IvT" firstAttribute="centerX" secondItem="Rnm-J5-xJ7" secondAttribute="centerX" id="HwT-JL-aWM"/>
-                                    <constraint firstItem="oLI-Su-IvT" firstAttribute="centerY" secondItem="Rnm-J5-xJ7" secondAttribute="centerY" id="iVV-I6-jWA"/>
-                                    <constraint firstItem="JIB-uu-NIO" firstAttribute="height" secondItem="Rnm-J5-xJ7" secondAttribute="height" id="mcF-IO-Inf"/>
-                                    <constraint firstAttribute="height" constant="186" id="t38-0S-qbn"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ok4-e0-UlD" customClass="RoundView" customModule="GuineaLife" customModuleProvider="target">
                                 <rect key="frame" x="109.5" y="723" width="195" height="67"/>
                                 <subviews>
@@ -828,14 +798,51 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rnm-J5-xJ7" customClass="RoundView" customModule="GuineaLife" customModuleProvider="target">
+                                <rect key="frame" x="131" y="123" width="152" height="84"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="registerbackground" translatesAutoresizingMaskIntoConstraints="NO" id="JIB-uu-NIO">
+                                        <rect key="frame" x="0.0" y="0.0" width="152" height="84"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Add Pig" translatesAutoresizingMaskIntoConstraints="NO" id="oLI-Su-IvT">
+                                        <rect key="frame" x="0.0" y="0.0" width="152" height="84"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJl-DG-3Md" userLabel="pickimage">
+                                        <rect key="frame" x="0.0" y="0.0" width="152" height="84"/>
+                                        <connections>
+                                            <action selector="LoadImagePig:" destination="FsE-ee-Il0" eventType="touchUpInside" id="wR2-uF-BuL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="oLI-Su-IvT" firstAttribute="width" secondItem="Rnm-J5-xJ7" secondAttribute="width" id="7UC-g5-8Db"/>
+                                    <constraint firstItem="JIB-uu-NIO" firstAttribute="height" secondItem="Rnm-J5-xJ7" secondAttribute="height" id="7wc-2Y-2OE"/>
+                                    <constraint firstItem="WJl-DG-3Md" firstAttribute="width" secondItem="Rnm-J5-xJ7" secondAttribute="width" id="Jaa-iI-mkX"/>
+                                    <constraint firstItem="JIB-uu-NIO" firstAttribute="centerY" secondItem="Rnm-J5-xJ7" secondAttribute="centerY" id="Jqt-q5-jh8"/>
+                                    <constraint firstItem="oLI-Su-IvT" firstAttribute="height" secondItem="Rnm-J5-xJ7" secondAttribute="height" id="aoJ-dd-m0m"/>
+                                    <constraint firstItem="oLI-Su-IvT" firstAttribute="centerX" secondItem="Rnm-J5-xJ7" secondAttribute="centerX" id="bVU-eh-gAh"/>
+                                    <constraint firstItem="JIB-uu-NIO" firstAttribute="width" secondItem="Rnm-J5-xJ7" secondAttribute="width" id="blx-H8-jNC"/>
+                                    <constraint firstItem="JIB-uu-NIO" firstAttribute="centerX" secondItem="Rnm-J5-xJ7" secondAttribute="centerX" id="hkS-by-MFm"/>
+                                    <constraint firstItem="WJl-DG-3Md" firstAttribute="height" secondItem="Rnm-J5-xJ7" secondAttribute="height" id="lTU-Wz-wnR"/>
+                                    <constraint firstItem="WJl-DG-3Md" firstAttribute="centerY" secondItem="Rnm-J5-xJ7" secondAttribute="centerY" id="nSN-Ag-rub"/>
+                                    <constraint firstAttribute="height" constant="84" id="t38-0S-qbn"/>
+                                    <constraint firstItem="WJl-DG-3Md" firstAttribute="centerX" secondItem="Rnm-J5-xJ7" secondAttribute="centerX" id="wrk-ET-O5J"/>
+                                    <constraint firstItem="oLI-Su-IvT" firstAttribute="centerY" secondItem="Rnm-J5-xJ7" secondAttribute="centerY" id="yWR-Bv-aoK"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="XOG-31-pST" firstAttribute="leading" secondItem="tXu-fV-xYN" secondAttribute="leading" constant="20" id="71f-kG-5Xm"/>
                             <constraint firstItem="RlX-Ul-nof" firstAttribute="leading" secondItem="tXu-fV-xYN" secondAttribute="leading" constant="20" id="ADl-pZ-lCc"/>
-                            <constraint firstItem="tXu-fV-xYN" firstAttribute="trailing" secondItem="Rnm-J5-xJ7" secondAttribute="trailing" constant="39" id="AiI-ov-a3J"/>
-                            <constraint firstItem="Rnm-J5-xJ7" firstAttribute="leading" secondItem="tXu-fV-xYN" secondAttribute="leading" constant="40" id="DrB-4C-mA4"/>
-                            <constraint firstItem="Bv2-bM-cS6" firstAttribute="top" secondItem="Rnm-J5-xJ7" secondAttribute="bottom" constant="16" id="EPH-lU-eUY"/>
+                            <constraint firstItem="tXu-fV-xYN" firstAttribute="trailing" secondItem="Rnm-J5-xJ7" secondAttribute="trailing" constant="131" id="AiI-ov-a3J"/>
+                            <constraint firstItem="Rnm-J5-xJ7" firstAttribute="leading" secondItem="tXu-fV-xYN" secondAttribute="leading" constant="131" id="DrB-4C-mA4"/>
+                            <constraint firstItem="Bv2-bM-cS6" firstAttribute="top" secondItem="Rnm-J5-xJ7" secondAttribute="bottom" constant="65" id="EPH-lU-eUY"/>
                             <constraint firstItem="RlX-Ul-nof" firstAttribute="top" secondItem="Bv2-bM-cS6" secondAttribute="bottom" constant="8" id="FzV-mw-weC"/>
                             <constraint firstItem="tXu-fV-xYN" firstAttribute="trailing" secondItem="RlX-Ul-nof" secondAttribute="trailing" constant="20" id="Ohm-rC-CaH"/>
                             <constraint firstItem="uqs-JF-otY" firstAttribute="top" secondItem="RlX-Ul-nof" secondAttribute="bottom" constant="87" id="R5g-ZS-f7p"/>
@@ -846,7 +853,7 @@
                             <constraint firstItem="Bv2-bM-cS6" firstAttribute="leading" secondItem="tXu-fV-xYN" secondAttribute="leading" constant="164" id="ht7-Ko-48C"/>
                             <constraint firstItem="uqs-JF-otY" firstAttribute="top" secondItem="BR8-9w-mEy" secondAttribute="bottom" constant="8" symbolic="YES" id="jFI-Ji-Vx3"/>
                             <constraint firstItem="tXu-fV-xYN" firstAttribute="bottom" secondItem="ok4-e0-UlD" secondAttribute="bottom" constant="72" id="kqQ-to-FRr"/>
-                            <constraint firstItem="Rnm-J5-xJ7" firstAttribute="top" secondItem="tXu-fV-xYN" secondAttribute="top" constant="26" id="l9Y-nz-749"/>
+                            <constraint firstItem="Rnm-J5-xJ7" firstAttribute="top" secondItem="tXu-fV-xYN" secondAttribute="top" constant="79" id="l9Y-nz-749"/>
                             <constraint firstItem="tXu-fV-xYN" firstAttribute="trailing" secondItem="uqs-JF-otY" secondAttribute="trailing" constant="20" id="lWZ-Jy-LDq"/>
                             <constraint firstItem="ok4-e0-UlD" firstAttribute="centerX" secondItem="tXu-fV-xYN" secondAttribute="centerX" id="pNF-qs-Nqy"/>
                             <constraint firstItem="XOG-31-pST" firstAttribute="top" secondItem="Ccw-JW-Llp" secondAttribute="bottom" constant="8" symbolic="YES" id="uEv-0m-LVw"/>
@@ -859,6 +866,7 @@
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="done" id="M9G-Sx-tRC"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="addPorquinho" destination="oLI-Su-IvT" id="DWF-Ej-Wdk"/>
                         <outlet property="tfIdade" destination="SMC-6L-GMz" id="ezm-Mn-KJj"/>
                         <outlet property="tfNome" destination="c0G-zR-w5e" id="qB6-Xp-DRP"/>
                         <outlet property="tfPeso" destination="4D1-eA-j9z" id="HjO-HZ-rtH"/>
@@ -897,7 +905,6 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.78367001570000006" green="0.21766503600000001" blue="0.17679175959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="FL4-nm-sBg" firstAttribute="height" secondItem="b0M-r1-JxX" secondAttribute="height" id="AVY-iI-1th"/>
                                     <constraint firstAttribute="height" constant="187" id="SLU-Ai-hjp"/>
@@ -1065,7 +1072,6 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.78367001570000006" green="0.21766503600000001" blue="0.17679175959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="ha2-2U-49D" firstAttribute="centerY" secondItem="iC3-TP-9Sd" secondAttribute="centerY" id="YKs-Eb-pK3"/>
                                     <constraint firstAttribute="height" constant="187" id="ct7-cg-oec"/>
@@ -1127,7 +1133,6 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.78367001570000006" green="0.21766503600000001" blue="0.17679175959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="iiN-fp-fTU" firstAttribute="width" secondItem="swE-Ss-Rkp" secondAttribute="width" id="AvX-yA-SG6"/>
                                     <constraint firstItem="iiN-fp-fTU" firstAttribute="centerY" secondItem="swE-Ss-Rkp" secondAttribute="centerY" id="EQx-9e-lBB"/>

@@ -10,15 +10,44 @@ import Foundation
 import UIKit
 import CoreData
 
-class RegisterPig: UIViewController,UITextFieldDelegate{
+class RegisterPig: UIViewController,UITextFieldDelegate,UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     @IBOutlet weak var tfNome: UITextField!
     @IBOutlet weak var tfPeso: UITextField!
     @IBOutlet weak var tfIdade: UITextField!
+    @IBOutlet weak var addPorquinho: UIImageView!
+    
+    // codigo pra adicionar foto do porquinho da galeria
+    let imagePicker = UIImagePickerController()
+    
+    @IBAction func LoadImagePig(_ sender: Any) {
+        imagePicker.allowsEditing = false
+        imagePicker.sourceType = .photoLibrary
+        
+        present(imagePicker, animated: true, completion: nil)
+    }
+    
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            addPorquinho.contentMode = .scaleToFill
+            addPorquinho.image = pickedImage
+        }
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    // fim
+    
+    
     
     let context: NSManagedObjectContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        imagePicker.delegate = self
         tfNome.delegate = self
         tfIdade.delegate = self
         tfPeso.delegate = self
@@ -58,3 +87,4 @@ class RegisterPig: UIViewController,UITextFieldDelegate{
     
     
 }
+
