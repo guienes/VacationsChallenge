@@ -62,6 +62,7 @@ class RegisterPig: UIViewController,UITextFieldDelegate,UIImagePickerControllerD
     
     }
     
+    // cadastra os dados no CoreData
     @IBAction func DoneRegister(_ sender: Any) {
         let porco = NSEntityDescription.insertNewObject(forEntityName: "Porco", into: context) as! Porco
         
@@ -75,6 +76,8 @@ class RegisterPig: UIViewController,UITextFieldDelegate,UIImagePickerControllerD
         if let texto2 = self.tfPeso.text{
             porco.peso = Float(texto2) ?? 0
         }
+        
+//        if let imageData =
         
         
         do{

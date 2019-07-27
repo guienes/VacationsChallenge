@@ -70,7 +70,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DaG-qc-LKY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="K97-Jm-4Wb"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="Hometab" id="K97-Jm-4Wb"/>
                     <navigationItem key="navigationItem" title="Meus Porquinhos" id="ypx-Ef-YXk">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="zuW-7W-YlO"/>
                     </navigationItem>
@@ -238,7 +238,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wKA-OJ-XOz"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Comida" id="9Vs-08-IV7"/>
+                    <tabBarItem key="tabBarItem" title="Comida" image="FoodIcon" id="9Vs-08-IV7"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7M9-du-Win" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1098,7 +1098,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Oxq-Ov-qc4"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Cercado" id="CNh-5K-8Bv"/>
+                    <tabBarItem key="tabBarItem" title="Cercado" image="CercadoIcon" id="CNh-5K-8Bv"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xg0-JL-CAE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1352,6 +1352,9 @@
         <image name="Background" width="375" height="812"/>
         <image name="BackgroundCardRoundedd" width="295" height="466"/>
         <image name="BackgroundCell" width="375" height="44"/>
+        <image name="CercadoIcon" width="23" height="20"/>
+        <image name="FoodIcon" width="22" height="29"/>
+        <image name="Hometab" width="25" height="25"/>
         <image name="RegisterButtonBackground" width="195" height="67"/>
         <image name="RoundedRectangleRegister" width="335" height="51"/>
         <image name="buttondegrade" width="157" height="83"/>

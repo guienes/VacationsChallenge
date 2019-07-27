@@ -20,18 +20,18 @@ class ViewController: UIViewController {
             // caso queira tratar do erro
         }
         
-        let content = UNMutableNotificationContent()
-        content.title = "Teste"
-        content.body = "Cuí?"
+        let msg = UNMutableNotificationContent()
+        msg.title = "Alôô, alguem ai?"
+        msg.body = "Estou com fome.. cuí"
         
         var date = DateComponents() //notificacao de comida
-        date.hour = 2 // 2 horas da manhã
-        date.minute = 46 // 46 minutos
+        date.hour = 6 // 6 horas da manhã
+        date.minute = 00 // 0 minutos
         
-        let trigger = UNCalendarNotificationTrigger(dateMatching: date, repeats: true) //repete todos os dias
+        let trigger = UNCalendarNotificationTrigger(dateMatching: date, repeats: false) //repete todos os dias
         
         let uuiString = UUID().uuidString
-        let request = UNNotificationRequest(identifier: uuiString, content: content, trigger: trigger)
+        let request = UNNotificationRequest(identifier: uuiString, content: msg, trigger: trigger)
         
         center.add(request) { (error) in
             // caso queira tratar algum erro

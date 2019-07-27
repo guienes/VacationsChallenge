@@ -43,8 +43,8 @@ class PorcoCollectionViewController: UICollectionViewController{
         
         if let cell = self.collectionView.dequeueReusableCell(withReuseIdentifier: "porcoCell", for: indexPath) as? PorcoCollectionViewCell{
             cell.lblName.text = porcos[indexPath.row].nome
-            cell.lblPeso.text = "Peso: \(porcos[indexPath.row].peso)" //converte para string (\)
-            cell.lblIdade.text = "Idade: \(porcos[indexPath.row].idade)"
+            cell.lblPeso.text = "Peso: \(porcos[indexPath.row].peso) gramas" //converte para string (\)
+            cell.lblIdade.text = "Idade: \(porcos[indexPath.row].idade) anos/meses"
             
             return cell
         }
