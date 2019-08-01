@@ -18,7 +18,8 @@ class RegisterPig: UIViewController,UITextFieldDelegate,UIImagePickerControllerD
     
     // codigo pra adicionar foto do porquinho da galeria
     let imagePicker = UIImagePickerController()
-    
+    private let df = DateFormatter()
+    var caminhofoto = ""
     @IBAction func LoadImagePig(_ sender: Any) {
         imagePicker.allowsEditing = false
         imagePicker.sourceType = .photoLibrary
@@ -29,8 +30,9 @@ class RegisterPig: UIViewController,UITextFieldDelegate,UIImagePickerControllerD
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
-            addPorquinho.contentMode = .scaleToFill
             addPorquinho.image = pickedImage
+            caminhofoto = df.string(from: Date())
+            FileHelper.saveImage(image: pickedImage, nameWithoutExtension: caminhofoto)
         }
         dismiss(animated: true, completion: nil)
     }
@@ -67,6 +69,8 @@ class RegisterPig: UIViewController,UITextFieldDelegate,UIImagePickerControllerD
         let porco = NSEntityDescription.insertNewObject(forEntityName: "Porco", into: context) as! Porco
         
         porco.nome = self.tfNome.text
+        
+        porco.caminhoImagem = caminhofoto
         
         if let texto = self.tfIdade.text{
             porco.idade = Int16(texto) ?? 0

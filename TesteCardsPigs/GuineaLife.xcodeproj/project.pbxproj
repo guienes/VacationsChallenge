@@ -16,6 +16,8 @@
 		BC434DEB22CA7A590025CDBB /* Porco+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC434DE922CA7A590025CDBB /* Porco+CoreDataProperties.swift */; };
 		BC434DED22CA7E020025CDBB /* PorcoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC434DEC22CA7E020025CDBB /* PorcoCollectionViewCell.swift */; };
 		BC434DEF22CA7F110025CDBB /* PorcoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC434DEE22CA7F110025CDBB /* PorcoCollectionViewController.swift */; };
+		BC9E4E1122F34FAA00A27A5C /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9E4E1022F34FAA00A27A5C /* FileHelper.swift */; };
+		BC9E4E1422F3629A00A27A5C /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9E4E1322F3629A00A27A5C /* NotificationViewController.swift */; };
 		BCBE16D422CD331000A86C7A /* RegisterPig.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBE16D322CD331000A86C7A /* RegisterPig.swift */; };
 		BCC6D6E122E0F2730007120F /* NeverFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC6D6E022E0F2730007120F /* NeverFoodViewController.swift */; };
 		BCC6D6E322E0F5220007120F /* NeverFoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC6D6E222E0F5220007120F /* NeverFoodCell.swift */; };
@@ -39,6 +41,8 @@
 		BC434DE922CA7A590025CDBB /* Porco+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Porco+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		BC434DEC22CA7E020025CDBB /* PorcoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PorcoCollectionViewCell.swift; sourceTree = "<group>"; };
 		BC434DEE22CA7F110025CDBB /* PorcoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PorcoCollectionViewController.swift; sourceTree = "<group>"; };
+		BC9E4E1022F34FAA00A27A5C /* FileHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
+		BC9E4E1322F3629A00A27A5C /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		BCBE16D322CD331000A86C7A /* RegisterPig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPig.swift; sourceTree = "<group>"; };
 		BCC6D6E022E0F2730007120F /* NeverFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeverFoodViewController.swift; sourceTree = "<group>"; };
 		BCC6D6E222E0F5220007120F /* NeverFoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeverFoodCell.swift; sourceTree = "<group>"; };
@@ -67,6 +71,7 @@
 			children = (
 				BC434DE822CA7A590025CDBB /* Porco+CoreDataClass.swift */,
 				BC434DE922CA7A590025CDBB /* Porco+CoreDataProperties.swift */,
+				BC9E4E1222F3625800A27A5C /* Notification */,
 				BCF624FF22DD396D0065EDF7 /* 2xFood */,
 				BCF6251022DF982A0065EDF7 /* AllDayFood */,
 				BCC6D6DF22E0F2580007120F /* NeverFood */,
@@ -88,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				BC434DD322C940C80025CDBB /* AppDelegate.swift */,
+				BC9E4E1022F34FAA00A27A5C /* FileHelper.swift */,
 				BC434DD522C940C80025CDBB /* ViewController.swift */,
 				BC434DD722C940C80025CDBB /* Main.storyboard */,
 				BC434DEC22CA7E020025CDBB /* PorcoCollectionViewCell.swift */,
@@ -99,6 +105,14 @@
 				BC434DE222C940C90025CDBB /* Info.plist */,
 			);
 			path = GuineaLife;
+			sourceTree = "<group>";
+		};
+		BC9E4E1222F3625800A27A5C /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				BC9E4E1322F3629A00A27A5C /* NotificationViewController.swift */,
+			);
+			path = Notification;
 			sourceTree = "<group>";
 		};
 		BCC6D6DF22E0F2580007120F /* NeverFood */ = {
@@ -219,6 +233,8 @@
 				BC434DD422C940C80025CDBB /* AppDelegate.swift in Sources */,
 				BC434DEF22CA7F110025CDBB /* PorcoCollectionViewController.swift in Sources */,
 				BCC6D6E122E0F2730007120F /* NeverFoodViewController.swift in Sources */,
+				BC9E4E1122F34FAA00A27A5C /* FileHelper.swift in Sources */,
+				BC9E4E1422F3629A00A27A5C /* NotificationViewController.swift in Sources */,
 				BC434DEB22CA7A590025CDBB /* Porco+CoreDataProperties.swift in Sources */,
 				BC434DEA22CA7A590025CDBB /* Porco+CoreDataClass.swift in Sources */,
 				BCF6250F22DD4DA20065EDF7 /* FoodTwoCell.swift in Sources */,

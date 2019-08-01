@@ -9,11 +9,20 @@
 import UIKit
 import UserNotifications
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UNUserNotificationCenterDelegate {
 
+    let remove = UNUserNotificationCenter.current()
     override func viewDidLoad() {
         super.viewDidLoad()
         // codigo para notificação
+        notificacao()
+        
+    
+    }
+    
+    func notificacao(){
+        
+        remove.removeAllPendingNotificationRequests()
         
         let center = UNUserNotificationCenter.current()
         center.requestAuthorization(options: [.alert, .sound]) { (accepted, error) in
@@ -22,17 +31,18 @@ class ViewController: UIViewController {
         
         let msg = UNMutableNotificationContent()
         msg.title = "Aiai que soninho"
-
+        
         msg.body = "Cade minhas comidaa! AAAA cui cuii!"
         
         var manha = DateComponents() //notificacao de comida
-        manha.hour = 07 // 6 horas da manhã
+        manha.hour = 06 // 6 horas da manhã
         manha.minute = 00 // 0 minutos
         
         let trigger = UNCalendarNotificationTrigger(dateMatching: manha, repeats: false) //repete todos os dias
         
         let uuiString = UUID().uuidString
         let request = UNNotificationRequest(identifier: uuiString, content: msg, trigger: trigger)
+        
         
         
         let msg2 = UNMutableNotificationContent()
@@ -58,7 +68,10 @@ class ViewController: UIViewController {
         }     // notificacao da manhã
     }
     
+    
+    
     // tela Tamanho cercado
+    
     
     @IBAction func voltarTamanho(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
