@@ -12,8 +12,15 @@ import UserNotifications
 
 class NotificationViewController: UIViewController, UNUserNotificationCenterDelegate,UIPickerViewDelegate,UIPickerViewDataSource{
     
+    
+    
+    let remove = UNUserNotificationCenter.current()
     var pickerData: [[String]] = [[String]]()
+    
     @IBOutlet weak var picker: UIPickerView!
+    
+    var selectedHour = "00"
+    var selectedMinute = "00"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,8 +30,6 @@ class NotificationViewController: UIViewController, UNUserNotificationCenterDele
         
         self.picker.delegate = self
         self.picker.dataSource = self
-        
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -44,20 +49,27 @@ class NotificationViewController: UIViewController, UNUserNotificationCenterDele
         return pickerData[component][row]
     }
     
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        if component == 0 {
+            selectedHour = pickerData[component][row]
+        } else {
+            selectedMinute = pickerData[component][row]
+        }
+    }
     
-    
-    
-   
-    
-    
-    
+
+    @IBAction func setNotification(_ sender: Any) {
+        print(selectedHour)
+        print(selectedMinute)
+        notificacaoPush()
+    }
     
     
     func notificacaoPush(){
         let center = UNUserNotificationCenter.current()
-        center.requestAuthorization(options: [.alert, .sound]) { (accepted, error) in
-            // caso queira tratar do erro
-        }
+        var conversaohour: Int = (Int(selectedHour) ?? nil)!
+        var conversaominute: Int = (Int(selectedMinute) ?? nil)!
+        remove.removeAllPendingNotificationRequests()
         
         let msg = UNMutableNotificationContent()
         msg.title = "teste!"
@@ -65,10 +77,11 @@ class NotificationViewController: UIViewController, UNUserNotificationCenterDele
         msg.body = "Cade minhas comidaa! AAAA cui cuii!"
         
         var manha = DateComponents() //notificacao de comida
-        manha.hour = 06 // 6 horas da manhã
-        manha.minute = 00 // 0 minutos
         
-        let trigger = UNCalendarNotificationTrigger(dateMatching: manha, repeats: false) //repete todos os dias
+        manha.hour = conversaohour
+        manha.minute = conversaominute   // Minutos
+        
+        let trigger = UNCalendarNotificationTrigger(dateMatching: manha, repeats: true) //repete todos os dias
         
         let uuiString = UUID().uuidString
         let request = UNNotificationRequest(identifier: uuiString, content: msg, trigger: trigger)
@@ -77,5 +90,7 @@ class NotificationViewController: UIViewController, UNUserNotificationCenterDele
             // tratar erro
         }
     }
+    
+    
     
 }

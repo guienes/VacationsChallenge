@@ -4,9 +4,6 @@ class NeverFoodViewController: UIViewController,UITableViewDataSource,UITableVie
     
     @IBOutlet weak var NeverTableView: UITableView!
     
-    @IBAction func NeverFoodButton(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
     let neverFood = ["Blocos Minerais", "Carne", "Favas", "Frutas Cristalizadas", "Leite e derivados", "Mandioca", "Petiscos de Petshop", "Polivitamínicos", "Grãos", "Cebolinha", "Uva"]
     
     override func viewDidLoad() {
