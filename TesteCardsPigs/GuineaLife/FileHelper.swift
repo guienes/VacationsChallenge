@@ -30,6 +30,8 @@ class FileHelper{
         }
     }
     
+    
+   
     public static func getFile(filePathWithoutExtension:String) -> String?{
         let imagePath:URL = getDocumentsDirectory().appendingPathComponent("\(filePathWithoutExtension).jpg")
         if fileManager.fileExists(atPath: imagePath.relativePath){

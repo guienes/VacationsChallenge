@@ -11,12 +11,17 @@ import UserNotifications
 
 class ViewController: UIViewController, UNUserNotificationCenterDelegate {
     
-
+    var count: Int = 0
+    
+    @IBAction func Countador(_ sender: Any) {
+        return count += 1
+    }
+    
     let remove = UNUserNotificationCenter.current()
     override func viewDidLoad() {
         super.viewDidLoad()
         // codigo para notificação
-//        notificacao()
+        notificacao()
         let center = UNUserNotificationCenter.current()
         center.requestAuthorization(options: [.alert, .sound]) { (accepted, error) in
             // caso queira tratar do erro

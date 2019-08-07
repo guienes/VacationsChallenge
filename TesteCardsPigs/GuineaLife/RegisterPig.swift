@@ -18,8 +18,11 @@ class RegisterPig: UIViewController,UITextFieldDelegate,UIImagePickerControllerD
     
     // codigo pra adicionar foto do porquinho da galeria
     let imagePicker = UIImagePickerController()
+    
     private let df = DateFormatter()
-    var caminhofoto = ""
+    
+    var caminhofoto = UUID().uuidString
+    
     @IBAction func LoadImagePig(_ sender: Any) {
         imagePicker.allowsEditing = false
         imagePicker.sourceType = .photoLibrary
@@ -31,7 +34,7 @@ class RegisterPig: UIViewController,UITextFieldDelegate,UIImagePickerControllerD
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             addPorquinho.image = pickedImage
-            caminhofoto = df.string(from: Date())
+            //caminhofoto = df.string(from: Date()) DISNEY
             FileHelper.saveImage(image: pickedImage, nameWithoutExtension: caminhofoto)
         }
         dismiss(animated: true, completion: nil)
@@ -89,7 +92,8 @@ class RegisterPig: UIViewController,UITextFieldDelegate,UIImagePickerControllerD
         } catch {
             fatalError("Não foi possivel cadastrar o porquinho")
         }
-        self.dismiss(animated: true, completion: nil)
+        
+        self.navigationController?.popViewController(animated: true)
     }
     
     
